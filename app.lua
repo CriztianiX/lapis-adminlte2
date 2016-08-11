@@ -7,7 +7,7 @@ app:get("/", function()
 end)
 
 app:get("/login", function()
-  app.layout = require "views.themes.AdminLTE2"
+  app.layout = require "views.themes.AdminLTE2.login"
   return "Welcome to Lapis " .. require("lapis.version")
 end)
 
