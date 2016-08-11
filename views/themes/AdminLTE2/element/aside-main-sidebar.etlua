@@ -1,0 +1,13 @@
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <% render('views.themes.AdminLTE2.element.aside.user-panel') %>
+        <!-- search form -->
+        <% render('views.themes.AdminLTE2.element.aside.form') %>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <% render('views.themes.AdminLTE2.element.aside.sidebar-menu') %>
+    </section>
+    <!-- /.sidebar -->
+</aside>

@@ -2,12 +2,12 @@ local lapis = require("lapis")
 local app = lapis.Application()
 app:enable("etlua")
 app:get("/", function()
-  app.layout = require "views.layout"
+  app.layout = require "views.themes.AdminLTE2.default"
   return "Welcome to Lapis " .. require("lapis.version")
 end)
 
 app:get("/login", function()
-  app.layout = require "views.themes.login"
+  app.layout = require "views.themes.AdminLTE2"
   return "Welcome to Lapis " .. require("lapis.version")
 end)
 
