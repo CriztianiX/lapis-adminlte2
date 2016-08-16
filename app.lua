@@ -7,6 +7,12 @@ app:get("/", function()
   return "Welcome to Lapis " .. require("lapis.version")
 end)
 
+app:get("/index", function()
+  return {
+    render = "index"
+  }
+end)
+
 app:get("/add", function()
   return {
     render = "add"
