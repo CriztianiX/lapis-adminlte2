@@ -1,7 +1,9 @@
 <section class="content-header">
   <h1>
     Brands
-    <div class="pull-right"><a href="/add" class="btn btn-success btn-xs">New</a></div>
+    <div class="pull-right">
+      <a href="/add" class="btn btn-success btn-xs">New</a>
+    </div>
   </h1>
 </section>
 

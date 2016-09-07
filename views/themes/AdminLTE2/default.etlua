@@ -17,13 +17,19 @@
 <!-- AdminLTE Skins. Choose a skin from the css/skins
     folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="/static/AdminLte/css/skins/skin-blue.css" />
-
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="/static/AdminLte/plugins/iCheck/all.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="/static/AdminLte/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- iCheck 1.0.1 -->
+    <script src="/static/AdminLte/plugins/iCheck/icheck.min.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
     <!-- Site wrapper -->
@@ -37,7 +43,7 @@
                 <span class="logo-lg"><?php echo $theme['logo']['large'] ?></span>
             </a>
             <!-- Header Navbar: style can be found in header.less -->
-            <% render("views.themes.AdminLTE2.element.nav-top") %>
+            <% element(render, "element.nav-top") %>
         </header>
 
         <!-- Left side column. contains the sidebar -->
@@ -50,10 +56,9 @@
             <%= content_for("inner") %>
         </div>
         <!-- /.content-wrapper -->
-        <% render("views.themes.AdminLTE2.element.footer") %>
-
+        <% element(render,"element.footer") %>
         <!-- Control Sidebar -->
-        <% render('views.themes.AdminLTE2.element.aside-control-sidebar') %>
+        <% element(render, 'element.aside-control-sidebar') %>
         <!-- /.control-sidebar -->
 <!-- Add the sidebar's background. This div must be placed
     immediately after the control sidebar -->
@@ -61,12 +66,11 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery 2.1.4 -->
-<script src="/static/AdminLte/plugins/jQuery/jQuery-2.1.4.min.js"></script>
 <!-- Bootstrap 3.3.5 -->
 <script src="/static/AdminLte/bootstrap/js/bootstrap.js"></script>
 <!-- SlimScroll -->
 <script src="/static/AdminLte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+
 <!-- FastClick -->
 <script src="/static/AdminLte/plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
